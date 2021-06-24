@@ -1,0 +1,83 @@
+<html>
+<head>
+<title>Send Arm Motor values</title>
+</head>
+  <link rel="stylesheet" href="style.css">
+  
+<body>
+
+<div class="slidecontainer">
+
+	<iframe name="iframe1" id="frame1" style="display: none;"></iframe>
+        <form id="form1" action="PHPindex.php" method = "POST" target="frame1">
+
+
+<!  <img src="SMlogo.png" alt="SmartMethods" width="276" height="94">
+
+<br>
+<br>
+
+<fieldset>
+  <legend>Choose the below slides to move Arm Motor :</legend>
+  
+
+
+ 
+		<div class="M1>
+
+		<label for="value1">M 1</label><input type="range" min="0" max="180" value="0" class="slider" id="myRange1" name= "M1">
+		<p>Value: <span style="color:red" id="V1"></span></p>
+		</div>
+	
+		<div class="M2">
+		<label for="value2">M 2</label><input type="range" min="0" max="180" value="0" class="slider" id="myRange2" name = "M2">
+		<p>Value: <span style="color:red"id="V2"></span></p>
+		</div>
+	
+		<div class="M3">
+		<label for="value3">M 3</label><input type="range" min="0" max="180" value="0" class="slider" id="myRange3" name="M3">
+		<p>Value: <span style="color:red"id="V3"></span></p>
+		</div>
+		
+		<div class="M4">
+		<label for="value4">M 4</label><input type="range" min="0" max="180" value="0" class="slider" id="myRange4" name= "M4">
+		<p>Value: <span style="color:red" id="V4"></span></p>
+		</div>
+		
+		<div class="M5">
+		<label for="value5">M 5</label><input type="range" min="0" max="180" value="0" class="slider" id="myRange5" name= "M5">
+		<p>Value: <span style="color:red" id="V5"></span></p>
+		</div>
+		
+		<div class="M6">
+		<label for="value6">M 6</label><input type="range" min="0" max="180" value="0" class="slider" id="myRange6" name="M6">
+		<p>Value: <span style="color:red" id="V6"></span></p>
+		</div>
+		
+		
+		<!-- <div class ="form-group">
+			<input type="radio" name="Statusx" value="ON" />ON
+			<input type="radio" name="Statusx" value="OFF"/>OFF
+		</div> -->
+		  <br><br>
+		  
+		  
+		  <div class="group1">
+				<label for="">Select</label> <br>
+				<input type="radio" name="Status_E" value="OFF" /> OFF
+				<input type="radio" name="Status_E" value="ON" /> ON
+          </div>
+					
+		
+		<input type="submit" value="Save" name = Save >
+
+		</form>
+		
+		
+		</div>
+		
+		</fieldset>
+
+</body>
+ <script src="jv.js"></script> 
+</html>
